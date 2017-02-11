@@ -6,21 +6,21 @@ body {
     display: flex;
     width: 100vw;
     height: 100vh;
+    flex-wrap: wrap;
 }
 
-h1{
-  font-family:"Hoefler Text Ornaments", sans-serif;
-  line-height: 160%;
-  color:#fff;
-  font-size:35px;
+h1 {
+    font-family: cursive;
+    color: ##08050E;
+    font-size: 20px;
 }
 
-
-p{
-  line-height: 160%;
-  color:#fff;
-  font-family: "American Typewriter"	, sans-serif;
-  font-size: 20px;
+p {
+    letter-spacing: .4px;
+    line-height: 140%;
+    color: #fff;
+    font-family: "American Typewriter", sans-serif;
+    font-size: 16px;
 }
 
 img {
@@ -28,168 +28,136 @@ img {
     width: 60px;
 }
 
-#self-pic{
-  width: 100%;
-  height:100%;
+#rebel-icon {
+    width: 40px;
+    height: 40px;
 }
 
-#main-pic{
-  font-size: 16px
+#resume-button {
+    background-color: #35BC7A;
+    border: #fff 1px solid;
+    color: #fff;
+    font-weight: 900;
+    margin-top: 5px;
+    position: relative;
+    left: -25%
 }
 
+#resume-button-image, #contact-button-image {
+    width: 15px;
+    height: 15px;
+}
+
+#contact-button {
+    background-color: #35BC7A;
+    border: #fff 1px solid;
+    color: #fff;
+    font-weight: 900;
+    margin-top: 5px;
+    position: relative;
+    left: 25%
+}
+
+#self-pic {
+    width: 100%;
+    height: 100%;
+}
 
 .main-pic {
     flex: 1;
-    background-color: black;
 }
 
 .container {
     flex: 2;
     display: flex;
-    border-color: blue;
     flex-wrap: wrap;
-    width: 65%;
 }
 
 .box {
     display: flex;
-    text-align: center;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    height: 33.33333%;
 }
 
-.content{
-  width: 100%;
-  height: 100%;
-  position: relative;
-  top:30%;
+.box1 {
+    justify-content: center;
+    text-align: center;
+    width: 66.666%;
+    background-color: #35BC7A;
 }
 
-#box1 {
-  text-align: center;
-width:66.666%;
-background-color: #35BC7A;
+.box2 {
+    width: 33.333%;
+    background-color: #FF9E00;
 }
 
-#box2 {
-width:33.333%;
- background-color: #FF9E00;
-}
-
-#box3 {
+.box3 {
     width: 33.33333%;
     background-color: #1E8BC4;
 }
 
-#box4 {
+.box4 {
     flex: 33.33333%;
     background-color: #F15A49;
 }
 
-#box5 {
+.box5 {
     flex: 33.33333%;
     background-color: #35BC7A;
 }
 
-#box6 {
+.box6 {
     flex: 33.3333%;
     background-color: #F86925;
 }
 
-#box7 {
+.box7 {
     flex: 33.3333%;
     background-color: #1E8BC4;
 }
 
-#box8 {
+.box8 {
     flex: 33.33333%;
     background-color: #F86925;
 }
 
-
-
-
-@media (max-width:600px) {
-    div {
-        position: absolute;
-        top: 0%
+@media (max-width:690px) {
+    body {
+        flex-direction: column;
+    }
+    .main-pic {
+        order: 1;
+        height: 30%;
     }
     .container {
-        width: 100%
+        order: 2;
     }
-    .box1 {
-        flex: 50%;
-        background-color: red;
+    .box1 p {
+        font-size: 11px;
     }
-    .box2 {
-        flex: 50%;
-        background-color: green;
-    }
-    .box3 {
-        flex: 50%;
-        background-color: yellow;
-    }
-    .box4 {
-        flex: 50%;
-        background-color: brown;
-    }
-    .box5 {
-        flex: 50%;
-        background-color: grey;
-    }
-    .box6 {
-        flex: 50%;
-        background-color: orange;
-    }
-    .box7 {
-        flex: 50%;
-        background-color: blue;
-    }
-    .box8 {
-        flex: 50%;
-        background-color: purple;
-    }
-    .box9 {
-        flex: 50%;
-        background-color: pink;
+    p {
+        font-size: 14px;
     }
 }
 
-@media (max-width:500px) {
-    .box1 {
-        flex: 100%;
-        background-color: red;
+@media (max-width:540px) {
+    img {
+        width: 80px;
+        height: 80px
     }
-    .box2 {
-        flex: 100%;
-        background-color: green;
+    body {
+        height: 1200px;
     }
-    .box3 {
-        flex: 100%;
-        background-color: yellow;
+    .box1 p {
+        font-size: 14px;
+        text-align: left;
+        line-height: 160%;
+        width: 90%;
+        margin-left: 10px;
     }
-    .box4 {
-        flex: 100%;
-        background-color: brown;
-    }
-    .box5 {
-        flex: 100%;
-        background-color: grey;
-    }
-    .box6 {
-        flex: 100%;
-        background-color: orange;
-    }
-    .box7 {
-        flex: 100%;
-        background-color: blue;
-    }
-    .box8 {
-        flex: 100%;
-        background-color: purple;
-    }
-    .box9 {
-        flex: 100%;
-        background-color: pink;
+    .box {
+        flex-basis: 100%
     }
 }
